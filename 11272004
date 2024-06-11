@@ -1,0 +1,7 @@
+import requests  # 引入 requests 模塊
+
+rd = requests.post(
+    f"https://notify-api.line.me/api/notify",
+    headers={"Authorization": f"Bearer {TOKEN_NOTIFY}"},
+    data={"message": f"{message} Hello, World!"}
+)
